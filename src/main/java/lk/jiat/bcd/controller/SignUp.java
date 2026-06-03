@@ -40,7 +40,6 @@ public class SignUp extends HttpServlet {
             for (User user : users) {
                 if (user.getEmail().equals(email)) {
                     resp.getWriter().write(email + " is already in use");
-                    return;
                 }
             }
 
